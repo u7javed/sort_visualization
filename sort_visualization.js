@@ -157,7 +157,7 @@ function setup() {
 	list = new List();
 	list.fill();
 	push();
-	sizeSlider.position(width - width/6.4, height/3);
+	sizeSlider.position(width - 200, height/3);
 	sizeSlider.size(280, 140);
 	sizeSlider.style('transform: rotate(' + (270) + 'deg);');
 	pop();
@@ -604,7 +604,7 @@ function menuBar() {
 	fill(255);
 	text("NUMBER of ELEMENTS in ARRAY", width/1.34, height/11);
 	textSize(40);
-	text(Math.floor(sizeSlider.value()) ,width/1.07, height/9.6)
+	text(Math.floor(sizeSlider.value()) ,width - 85, height/9.6)
 
 	if(list.isSorted) {
 		fill(38, 185, 201);
